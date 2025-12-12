@@ -1,10 +1,9 @@
 import BioQuest25 from "./components/bq2525";
 import DNAHero from "./components/DNAHero";
-import HomeScrollToBioquets from "./components/homeScrollBq";
+
 import Illustration from "./components/illustration";
 import Navbar from "./components/navbar";
 import GlassRegisterCardNextImage from "./components/registration26button";
-import ScrollLockUntil from "./components/ScrollLockUntil";
 import ScrollReveal from './components/ScrollReveal';
 import ScrollyVideoWrapper from "./components/ScrollyVideoWrapper";
 
