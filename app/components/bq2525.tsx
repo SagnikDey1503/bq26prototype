@@ -48,7 +48,7 @@ export default function BioQuest25() {
         <div className="flex justify-center mb-12">
           <GlassCard className="p-2 inline-flex space-x-2">
             {[
-              { id: 'round1', label: 'Round 1: The Screen' },
+              { id: 'round1', label: 'Round 1: SCIENCE & CURIOSITY QUIZ' },
               { id: 'round2', label: 'Round 2: The Challenge' },
               { id: 'round3', label: 'Round 3: The Finals' }
             ].map((tab) => (

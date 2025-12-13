@@ -15,19 +15,17 @@ export default function Home() {
       
       {/* 1. HERO SECTION */}
       <DNAHero /> 
-      
-      <ScrollyVideoWrapper 
-        videoComponent={<Illustration />}
-        nextComponent={<GlassRegisterCardNextImage/>} // <-- Placeholder to avoid duplicate card
-      />
+ <Illustration />
+ <GlassRegisterCardNextImage />
      
+   
       {/* <div className="py-3" />  */}
       
     
       
       {/* 5. The Archive Reveal (BioQuest25) */}
       <ScrollReveal animation="slideUp">
-        <div id="bioquest25" className="scroll-mt-15.5">
+        <div id="bioquest25" className="scroll-mt-1">
   <BioQuest25 />
 </div>
 

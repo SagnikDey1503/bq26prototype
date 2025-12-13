@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Download, Youtube, ExternalLink, Users, Trophy, Target, ChevronRight } from 'lucide-react';
 import DNAHero from '../components/DNAHero';
+import Navbar from '../components/navbar';
 
 // --- 1. Reusable Glass Components ---
 
@@ -29,7 +30,7 @@ export default function BioQuest25() {
   return (
     // CHANGED: selection:bg-blue-500/30 -> selection:bg-emerald-500/30
     <main className="min-h-screen  text-gray-100 font-sans selection:bg-emerald-500/30">
-      
+      {/* <Navbar /> */}
        <DNAHero />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
@@ -48,9 +49,9 @@ export default function BioQuest25() {
         <div className="flex justify-center mb-12">
           <GlassCard className="p-2 inline-flex space-x-2">
             {[
-              { id: 'round1', label: 'Round 1: The Screen' },
-              { id: 'round2', label: 'Round 2: The Challenge' },
-              { id: 'round3', label: 'Round 3: The Finals' }
+              { id: 'round1', label: 'Round 1: Science and Curiosity' },
+              { id: 'round2', label: 'Round 2: Intoduction to synthetic biology' },
+              { id: 'round3', label: 'Round 3: Mini IGEM challenge' }
             ].map((tab) => (
               <button
                 key={tab.id}
@@ -217,7 +218,7 @@ export default function BioQuest25() {
 
 function StatCard({ label, value, subtext, icon }: any) {
   return (
-    <GlassCard className="p-6 relative overflow-hidden group hover:bg-white/10 transition-colors">
+    <GlassCard className="p-6 relative overflow-hidden group hover:backdrop-blur-sm  transition-colors">
       <div className="flex justify-between items-start mb-4">
         <h3 className="text-gray-400 font-medium">{label}</h3>
         <div className="p-2 bg-white/5 rounded-lg group-hover:scale-110 transition-transform">{icon}</div>
