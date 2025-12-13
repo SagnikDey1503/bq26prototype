@@ -26,7 +26,7 @@ export default function Navbar() {
 
       {/* FULL-WIDTH BACKDROP — ONLY WHEN DESKTOP OPEN */}
       {isDesktopOpen && (
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm -z-10 hidden md:block" />
+        <div className="absolute inset-0 bg-black/1 backdrop-blur-sm -z-10 hidden md:block" />
       )}
 
       {/* LEFT: Mobile hamburger + Brand */}
@@ -118,7 +118,7 @@ export default function Navbar() {
 
   {!isDesktopOpen && (
   <span
-  className="absolute top-full mt-1 text-[10px] text-cyan-300/70 select-none"
+  className="absolute top-full mt-1 text-[10px] text-cyan-300/90 select-none"
   style={{
     animation: "clickme-idle 1.6s ease-in-out infinite",
   }}

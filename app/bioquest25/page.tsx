@@ -29,14 +29,15 @@ export default function BioQuest25() {
 
   return (
     // CHANGED: selection:bg-blue-500/30 -> selection:bg-emerald-500/30
+    <div id='bioquest25'>
     <main className="min-h-screen  text-gray-100 font-sans selection:bg-emerald-500/30">
-      {/* <Navbar /> */}
+      <Navbar />
        <DNAHero />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4  sm:px-6 lg:px-8">
         
         {/* HEADER */}
-        <div className="text-center mb-8 space-y-4">
+        <div className="text-center mb-8 ">
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
             BioQuest <span className="text-emerald-400">2025</span>
           </h1>
@@ -211,6 +212,7 @@ export default function BioQuest25() {
         </div>
       </div>
     </main>
+    </div>
   );
 }
 

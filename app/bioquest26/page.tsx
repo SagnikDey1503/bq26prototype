@@ -19,6 +19,7 @@ import {
   ImageIcon
 } from 'lucide-react';
 import DNAHero from '../components/DNAHero';
+import Navbar from '../components/navbar';
 
 // --- 1. Reusable Glass Components ---
 
@@ -161,12 +162,13 @@ export default function BioQuest26() {
     <main className="min-h-screen  text-gray-100 font-sans selection:bg-emerald-500/30">
       
       {/* Background & Hero */}
+      <Navbar />
       <DNAHero />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 space-y-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         
         {/* --- HEADER SECTION --- */}
-        <div className="text-center space-y-6 pt-20 animate-in fade-in slide-in-from-bottom-8 duration-700">
+        <div className="text-center  animate-in fade-in slide-in-from-bottom-8 duration-700">
           <Badge>Registration Open</Badge>
           <h1 className="text-5xl md:text-8xl font-extrabold tracking-tight">
             BioQuest <span className="text-emerald-400 drop-shadow-lg">2026</span>
